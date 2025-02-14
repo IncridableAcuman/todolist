@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  background: #000;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px auto;
+}
+.todo{
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 12px;
+  align-items: center;
+}
+.heading{
+  display: flex;
+  font-size: 40px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.note{
+  color: rgba(34, 2, 2, 0.566);
+  cursor: pointer;
+  margin-right: 5px;
+}
+.spaning{
+  display: flex;
+  align-items: center;
+  color: crimson;
+}
+
+.d-flex{
+  display: flex;
+  margin-bottom: 12px;
+}
+.d-flex input{
+  flex: 1;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem 0 0 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.d-flex input:focus{
+  outline: none;
+  box-shadow: 0 0 0 2px #f97316;
+}
+.btn{
+  padding: 0.5rem 1rem;
+  background-color: #f97316;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  transition:background-color .3s ease;
+  cursor: pointer;
+}
+.btn:hover{
+background-color: rgb(155, 5, 5);
+}
+.items li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 2px;
+  background-color: #ccc;
+  border-radius: 5px;
+  transition: .3s ease;
+}
+.items li:hover{
+background-color: #f97316;
+color: #ccc;
+}
+.items li input{
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.items li span{
+  font-size: 16px;
+  font-weight: bold;
+}
+.items li .remove{
+  font-size: 25px;
+  color: #333;
+  cursor: pointer;
+}
